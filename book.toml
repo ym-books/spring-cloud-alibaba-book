@@ -1,0 +1,6 @@
+[book]
+authors = ["xinxiamu"]
+language = "en"
+multilingual = false
+src = "src"
+title = "spring-cloud-alibaba微服务架构学习"
