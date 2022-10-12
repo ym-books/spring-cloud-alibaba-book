@@ -4,6 +4,15 @@
 
 -------------------------------------------------
 
+- [架构基础组件](content/basic/index.md)
+  - [Spring Boot](content/basic/spring_boot.md)
+  - [Spring MVC](content/basic/spring_mvc.md)
+  - [Spring Security](content/basic/spring_security.md)
+  - [Spring JPA](content/basic/spring_jpa.md)
+  - [Mybatis](content/basic/mybatis.md)
+
+--------------------------------------------------------------------
+
 - [Nacos注册与配置管理中心](content/nacos.md)
   - [Nacos的安装部署](content/nacos_install.md)
     - [单机模式部署](content/nacos_install_single.md)
@@ -14,11 +23,21 @@
   - [使用问题及面试](content/nacos_issue.md)
 - [网关设计](content/gateway.md)
   - [Sentinel流量治理](content/sentinel.md)
+- [负载均衡](content/load_balancing.md)
+- [服务容错](content/service_fault.md)
+  - [熔断降级](content/fuse.md)
+- [链路追踪](content/sleuth.md)
+- [消息驱动](content/stream.md)
+- [Seata分布式事务](content/seata.md)
 - [统一认证中心](content/auth.md)
   - [身份认证](content/auth_1.md)
   - [权限设计](content/auth_2.md)
-- [Seata分布式事务](content/seata.md)
-- [熔断降级](content/fuse.md)
+
+--------------------------------------------------------------
+
+- [单点登录](content/sso.md)
+- [Mysql读写分离策略](content/mysql_master_slave.md)
+- [Mysql分库分表策略](content/mysql_sub.md)
 
 --------------------------------------------
 
