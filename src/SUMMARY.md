@@ -27,18 +27,26 @@
 - [服务容错](content/service_fault.md)
   - [熔断降级](content/fuse.md)
 - [链路追踪](content/sleuth.md)
+- [服务监控](content/monitor.md)
+- [日志收集可视化](content/ekl.md)
 - [消息驱动](content/stream.md)
 - [Seata分布式事务](content/seata.md)
-- [统一认证中心](content/auth.md)
-  - [身份认证](content/auth_1.md)
-  - [权限设计](content/auth_2.md)
 
 --------------------------------------------------------------
 
+- [统一认证中心](content/auth.md)
+  - [身份认证](content/auth_1.md)
+  - [权限设计](content/auth_2.md)
 - [单点登录](content/sso.md)
 - [Mysql读写分离策略](content/mysql_master_slave.md)
 - [Mysql分库分表策略](content/mysql_sub.md)
 - [sass实现](content/sass.md)
+
+--------------------------------------------
+
+- [性能测试](content/test_pfr.md)
+  - [单链路压测](content/test_pfr_single.md)
+  - [全链路压测](content/test_pfr_full.md)
 
 --------------------------------------------
 
