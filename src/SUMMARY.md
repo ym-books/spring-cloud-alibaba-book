@@ -17,6 +17,7 @@
   - [Nacos的安装部署](content/nacos_install.md)
     - [单机模式部署](content/nacos_install_single.md)
     - [集群模式部署](content/nacos_install_multi.md)
+    - [定制配置文件](content/nacos_yaml.md)
   - [Nacos在Spring Cloud中使用](content/nacos_spring_cloud.md)
     - [作为服务治理](content/nacos_spring_cloud_register.md)
     - [作为配置管理中心](content/nacos_spring_cloud_config.md)
