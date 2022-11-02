@@ -5,11 +5,8 @@
 -------------------------------------------------
 
 - [架构基础组件](content/basic/index.md)
-  - [Spring Boot](content/basic/spring_boot.md)
-  - [Spring MVC](content/basic/spring_mvc.md)
-  - [Spring Security](content/basic/spring_security.md)
-  - [Spring JPA](content/basic/spring_jpa.md)
-  - [Mybatis](content/basic/mybatis.md)
+  - [分布式二级缓存框架`J2Cache`](content/basic/j2cache.md)
+- [使用中间件](content/mid/index.md)
 
 --------------------------------------------------------------------
 
@@ -38,7 +35,7 @@
 - [统一认证中心](content/auth.md)
   - [身份认证](content/auth_1.md)
   - [权限设计](content/auth_2.md)
-- [单点登录](content/sso.md)
+- [单点登录SSO](content/sso.md)
 - [Mysql读写分离策略](content/mysql_master_slave.md)
 - [Mysql分库分表策略](content/mysql_sub.md)
 - [sass实现](content/sass.md)
