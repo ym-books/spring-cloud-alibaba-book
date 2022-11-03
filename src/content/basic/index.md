@@ -9,6 +9,7 @@
 >- [Mybatis](#mybatis)
 >- [j2cache](#j2cache)
 >- [sharding-jdbc](#sharding-jdbc)
+>- [xxl-job](#xxl-job)
 
 <a id="spring-boot"/>
 
@@ -57,3 +58,15 @@ Rest接口框架。名声在外，不做过多介绍。
 分布式二级缓存框架。集成`Spring Cache`，作为本架构的缓存管理框架。
 
 具体使用请参考: [分布式二级缓存框架`J2Cache`](j2cache.md)
+
+<a id="sharding-jdbc"/>
+
+## sharding-jdbc
+
+数据库分库分表框架。具体集成方式请查阅：[集成`sharding-jdbc`](sharding-jdbc.md)
+
+<a id="xxl-job"/>
+
+## xxl-job
+
+分布式调度系统。集体集成方式请查阅：[分布式调度`xxl-job`](xxl-job.md)
