@@ -8,6 +8,7 @@
   - [分布式二级缓存框架`J2Cache`](content/basic/j2cache.md)
   - [集成`sharding-jdbc`](content/basic/sharding-jdbc.md)
   - [分布式调度`xxl-job`](content/basic/xxl-job.md)
+  - [数据库增量数据同步`canal`](content/basic/canal.md)
 - [使用中间件](content/mid/index.md)
 
 --------------------------------------------------------------------
@@ -28,7 +29,7 @@
   - [熔断降级](content/fuse.md)
 - [链路追踪](content/sleuth.md)
 - [服务监控](content/monitor.md)
-- [日志收集可视化](content/ekl.md)
+- [日志收集可视化EKL](content/ekl.md)
 - [消息驱动](content/stream.md)
 - [Seata分布式事务](content/seata.md)
 
