@@ -43,7 +43,8 @@
 - [Mysql读写分离策略](content/mysql_master_slave.md)
 - [Mysql分库分表策略](content/mysql_sub.md)
 - [sass实现](content/sass.md)
-- [API管理](content/api_manage.md)
+- [API文档管理](content/api_manage.md)
+- [API版本迭代](content/api_version.md)
 
 ---------------------------------------------
 
@@ -63,5 +64,8 @@
   - [单链路压测](content/test_pfr_single.md)
   - [全链路压测](content/test_pfr_full.md)
 - [部署运维](content/dev_ops.md)
+  - [开发环境搭建](content/dev_ops_dev.md)
   - [构建运行-Docker](content/dev_ops_docker.md)
   - [持续交付-Jenkins](content/dev_ops_jenkins.md)
+  - [全链路灰度发布](content/dev_ops_hd.md)
+  - [金丝雀发布](content/dev_ops_jsq.md)
