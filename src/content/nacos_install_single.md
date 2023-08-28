@@ -48,9 +48,53 @@ nacos is starting with standalone
 nacos is starting, you can check the /server/nacos-server/nacos/logs/start.out
 ```
 
+查看启动日志：
+```shell
+tail -f /server/nacos-server/nacos/logs/start.out
+```
+
 ### 登录控制台
 
-浏览器输入网址：`http://ip:port/nacos` 如：`http://192.168.0.106:8848/nacos`    
+浏览器输入网址：`http://ip:port/nacos` 如：`http://192.168.0.106:8848/nacos`   
+
+从版本2.2.1开始，需要自己进行开启鉴权配置，否则不需要登录。这在公共网络下会造成配置数据泄露。`nacos`自带了一个简单的鉴权插件，有更高数据安全要求的需要自己实现鉴权插件。  
+[鉴权参考](https://nacos.io/zh-cn/docs/v2/guide/user/auth.html)
+
+下面修改配置，需要登录才能进入首页。  
+编辑配置文件`application.properties`，更改一下配置：  
+
+修改之前：
+```properties
+### If turn on auth system:
+nacos.core.auth.enabled=false
+```
+修改之后：
+```properties
+### If turn on auth system:
+nacos.core.auth.system.type=nacos
+nacos.core.auth.enabled=true
+```
+
+自定义密钥：  
+开启鉴权之后，自定义用于生成JWT令牌的密钥，application.properties中的配置信息为：
+```properties
+### The default token (Base64 String):
+nacos.core.auth.plugin.nacos.token.secret.key=
+```
+用不少于32位的Base64字符串作为key，如下：
+```properties
+nacos.core.auth.plugin.nacos.token.secret.key=VGhpc0lzTXlDdXN0b21TZWNyZXRLZXkwMTIzNDU2Nzg=
+```
+
+接入nacos服务账号，密码配置：
+```properties
+### The two properties is the white list for auth and used by identity the request from other server.
+nacos.core.auth.server.identity.key=admin
+nacos.core.auth.server.identity.value=admin123
+```
+
+修改配置文件立马生效的，不需要重启nacos服务。
+
 
 默认登录账号密码：`nacos    nacos`
 
@@ -68,4 +112,6 @@ sh shutdown.sh
 ## Docker运行Nacos服务
 
 参考：https://github.com/nacos-group/nacos-docker
+
+
 
